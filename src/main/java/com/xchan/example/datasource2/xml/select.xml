@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xchan.example.datasource2.mapper.ExampleMapper2">
+    <select id="mainQuery" resultType="HashMap">
+        select *
+        from hrd.hrd_mst
+        where nik_atasan = '2018055523'
+        fetch next 10 rows only
+    </select>
+</mapper>
